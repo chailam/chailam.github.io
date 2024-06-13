@@ -1,0 +1,131 @@
+import React, { Fragment } from 'react';
+import { SanitizedExperience } from '../../interfaces/sanitized-config';
+import { skeleton } from '../../utils';
+import LazyImage from '../lazy-image';
+
+const ListItem = ({
+  time,
+  position,
+  company,
+  companyLink,
+  description,
+  logo,
+}: {
+  time: React.ReactNode;
+  position?: React.ReactNode;
+  company?: React.ReactNode;
+  companyLink?: string;
+  description?: string;
+  logo?: string;
+}) => (
+  <li className="mb-5 ml-4">
+    <div
+      className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
+      style={{ left: '-4.5px' }}
+    ></div>
+    <div className="my-0.5 text-xs">{time}</div>
+    {logo && (
+      <LazyImage
+        src={logo}
+        alt={'thumbnail'}
+        placeholder={skeleton({
+          widthCls: 'w-full',
+          heightCls: 'h-full',
+          shape: '',
+        })}
+        style={{
+          maxWidth: '15%',
+          float: 'right',
+          marginRight: '30%',
+          backgroundColor: 'white',
+        }}
+      />
+    )}
+    <h3 className="font-semibold">{position}</h3>
+    <div className="mb-4 font-normal">
+      <a href={companyLink} target="_blank" rel="noreferrer">
+        {company}
+      </a>
+    </div>
+    {description && (
+      <div
+        className="mb-4 font-normal"
+        dangerouslySetInnerHTML={{ __html: description }}
+      ></div>
+    )}
+    <div className="divider"></div>
+  </li>
+);
+
+const ExperienceCard = ({
+  experiences,
+  loading,
+}: {
+  experiences: SanitizedExperience[];
+  loading: boolean;
+}) => {
+  const renderSkeleton = () => {
+    const array = [];
+    for (let index = 0; index < 2; index++) {
+      array.push(
+        <ListItem
+          key={index}
+          time={skeleton({
+            widthCls: 'w-5/12',
+            heightCls: 'h-4',
+          })}
+          position={skeleton({
+            widthCls: 'w-6/12',
+            heightCls: 'h-4',
+            className: 'my-1.5',
+          })}
+          company={skeleton({ widthCls: 'w-6/12', heightCls: 'h-3' })}
+        />,
+      );
+    }
+
+    return array;
+  };
+  return (
+    <div className="card shadow-lg compact bg-base-100">
+      <div className="card-body">
+        <div className="mx-3">
+          <h5 className="card-title">
+            {loading ? (
+              skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
+            ) : (
+              <span className="text-base-content opacity-70">Experience</span>
+            )}
+          </h5>
+        </div>
+        <div className="text-base-content text-opacity-60">
+          <ol className="relative border-l-2 border-base-300 border-opacity-50 my-2 mx-4">
+            {loading ? (
+              renderSkeleton()
+            ) : (
+              <Fragment>
+                {experiences.map((experience, index) => (
+                  <ListItem
+                    key={index}
+                    time={`${experience.from} - ${experience.to}`}
+                    position={experience.position}
+                    company={experience.company}
+                    description={experience.description}
+                    logo={experience.logo}
+                    companyLink={
+                      experience.companyLink
+                        ? experience.companyLink
+                        : undefined
+                    }
+                  />
+                ))}
+              </Fragment>
+            )}
+          </ol>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ExperienceCard;
