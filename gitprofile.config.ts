@@ -386,7 +386,7 @@ const CONFIG = {
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >Credits</a> v1.1`,
+    >Credits</a> v1.1.2`,
 
   enablePWA: false,
 };
