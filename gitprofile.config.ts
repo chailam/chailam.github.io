@@ -70,7 +70,8 @@ const CONFIG = {
     email: 'cailan0301@gmail.com',
   },
   resume: {
-    fileUrl: 'https://www.google.com', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl:
+      'https://drive.google.com/file/d/1SaGL4Xz2CyzVZZJHhott9_IcrGLEcMhE/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
   },
   about: {
     description: `
