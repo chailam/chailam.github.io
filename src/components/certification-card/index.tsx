@@ -73,7 +73,7 @@ const CertificationCard = ({
                     <div className="my-0.5 text-xs">{certification.year}</div>
                     {certification.logo && (
                       <LazyImage
-                        src="/monash_university_logo1.png"
+                        src={certification.logo}
                         alt={'thumbnail'}
                         placeholder={skeleton({
                           widthCls: 'w-full',
