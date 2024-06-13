@@ -126,7 +126,7 @@ const CONFIG = {
         <li>- Supported the ramp-up process of the support team, enhancing its capacity and capability.</li>
     </ul>
     `,
-      logo: '../../src/assets/sitecore_logo1.png',
+      logo: '/sitecore_logo1.png',
     },
     {
       company: 'Sitecore',
@@ -143,7 +143,7 @@ const CONFIG = {
         <li>- Gained proficiency in ASP.NET and C# through hands-on projects and tasks.</li>
         <li>- Attend training sessions and workshops to stay updated on the latest features and updates in Sitecore products.</li>
     </ul>`,
-      logo: '../../src/assets/sitecore_logo1.png',
+      logo: '/sitecore_logo1.png',
     },
     {
       company: 'Monash University Malaysia',
@@ -170,7 +170,7 @@ const CONFIG = {
         <li>- Enhanced the efficiency of administrative processes by automating request handling through the newly established student intranet on SharePoint.</li>
         <li>- Contributed to the improvement of the university’s digital presence by integrating modern web technologies and best practices.</li>
     </ul>`,
-      logo: '../../src/assets/monash_university_logo1.png',
+      logo: '/monash_university_logo1.png',
     },
   ],
   certifications: [
@@ -178,40 +178,40 @@ const CONFIG = {
       name: 'Sitecore 10 .NET Developer Certification',
       body: 'This certification specifically focuses on Sitecore version 10 and is designed for developers who work with .NET technologies to build and maintain websites and applications on the Sitecore platform.',
       year: 'April 2024',
-      logo: '../../src/assets/sitecore_logo2.png',
+      logo: '/sitecore_logo2.png',
     },
     {
       name: 'Sitecore Personalize Certification',
       body: 'The earner of this badge understands the fundamental processes and recommended practices for real-time behavioral data ingestion, interactive APIs, batch data ingestion, and real-time audiences and segments for Sitecore Personalize.',
       year: 'April 2024',
       link: 'https://www.credly.com/badges/da4a86c6-578b-411e-b152-65eb2fb161ea/linked_in_profile',
-      logo: '../../src/assets/sitecore_logo2.png',
+      logo: '/sitecore_logo2.png',
     },
     {
       name: 'Sitecore CDP Certification',
       body: 'The earner of this badge understands the fundamental processes and recommended practices for real-time behavioral data ingestion, experiences, experiments, and decisioning for Sitecore CDP.',
       year: 'April 2024',
       link: 'https://www.credly.com/badges/da4a86c6-578b-411e-b152-65eb2fb161ea/linked_in_profile',
-      logo: '../../src/assets/sitecore_logo2.png',
+      logo: '/sitecore_logo2.png',
     },
     {
       name: 'Microsoft Certified: Azure Fundamentals',
       body: 'Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.',
       year: 'September 2022',
       link: 'https://www.credly.com/badges/0b2b0be6-1240-4784-89c9-70c61d6288a9/linked_in_profile',
-      logo: '../../src/assets/microsoft_logo1.png',
+      logo: '/microsoft_logo1.png',
     },
     {
       name: 'Certified Software Tester (CSTE)',
       body: 'A certification provided by the Quality Assurance Institute (QAI) focusing on comprehensive quality assurance principles and practices in IT. In contrast, the ISTQB® (International Software Testing Qualifications Board) offers a widely recognized, structured certification path specifically for software testing, including Foundation, Advanced, and Expert levels, along with specialized areas like Agile and Mobile Testing. Choosing between CSTE and ISTQB® depends on career goals and specific industry requirements.',
       year: 'November 2017',
-      logo: '../../src/assets/istqb_logo1.png',
+      logo: '/istqb_logo1.png',
     },
   ],
   educations: [
     {
       institution: 'Monash University Australia',
-      logo: '../../src/assets/monash_university_logo1.png',
+      logo: '/monash_university_logo1.png',
       degree: 'Master of Cybersecurity',
       from: '2020',
       to: '2021',
@@ -239,7 +239,7 @@ const CONFIG = {
     },
     {
       institution: 'Monash University Australia',
-      logo: '../../src/assets/monash_university_logo1.png',
+      logo: '/monash_university_logo1.png',
       degree:
         'Bachelor of Software Engineering (Honours) minor in Computer Networks and Security',
       from: '2016',
