@@ -102,9 +102,18 @@ const CONFIG = {
   experiences: [
     {
       company: 'Sitecore',
-      position: 'Software Support Engineer',
-      from: '30 April 2022',
+      position: 'Software Developer',
+      from: '1 October 2024',
       to: 'Present',
+      companyLink: 'https://sitecore.com',
+      description:``,
+      logo: '/sitecore_logo1.png',
+    },
+    {
+      company: 'Sitecore',
+      position: 'Software Engineer',
+      from: '30 April 2022',
+      to: '30 September 2024',
       companyLink: 'https://sitecore.com',
       description: `
       <u><b>Responsibilities:</u></b>
