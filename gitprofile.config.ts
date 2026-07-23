@@ -71,70 +71,76 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1SaGL4Xz2CyzVZZJHhott9_IcrGLEcMhE/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/13K_OjXDrFs0b0-9xli_QzpGY-gkv18xp/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
   },
   about: {
     description: `
-      A dedicated Software Engineer at Sitecore with a robust background in cybersecurity and software engineering.
-      I hold a Master's degree in Cybersecurity and First Class Honours in a Bachelor of Software Engineering with
-      a Minor in Computer Networks and Security from Monash University.
-      <br/>
-      <br/>
-      Passionate about software development, I am constantly seeking opportunities to grow and learn in the field.
-      Known for being a team player, I thrive in collaborative environments and enjoy working with others to achieve
-      common goals.
+      Backend Software Engineer specializing in C#/.NET, Azure, and AI-driven platform engineering. Founding engineer on a cross-team AI pioneer initiative building organization-wide code intelligence tooling through RAG and MCP (Model Context Protocol) systems. Combines strong backend delivery, production reliability, and disciplined AI-assisted development practices to accelerate engineering outcomes.
       `,
   },
   skills: [
-    'Sitecore',
-    'Python',
     'C#',
-    'ASP.NET',
+    '.NET',
+    'Python',
+    'RAG',
+    'MCP',
+    'Azure AI Search',
     'JavaScript',
     'SQL',
     'Docker',
     'Kubernetes',
     'Azure',
-    'Java',
+    'CI/CD',
     'Git',
-    'Angular',
+    'Sitecore',
   ],
   experiences: [
     {
       company: 'Sitecore',
-      position: 'Software Developer',
+      position: 'Software Engineer',
       from: '1 October 2024',
       to: 'Present',
       companyLink: 'https://sitecore.com',
-      description:``,
+      description: `
+      <u><b>Responsibilities:</u></b>
+      <br/>
+      <ul>
+        <li><b>Cross-team AI Pioneer Initiative — Founding Engineer</b> <i>The organization's first internal effort to research, build, and operationalize AI-driven engineering tooling, staffed by one selected engineer per team.</i>
+          <ul>
+            <li><b>Built and operationalized an organization-wide Retrieval-Augmented Generation (RAG) system on Azure AI Search</b> with <b>tree-sitter-based code indexing</b> across <b>200+ repositories</b> (each covering multiple product versions), designing indexed field coverage, chunk retrieval strategy, and freshness mechanisms (PR-change detection, file deletion tracking, metadata-change indexing) to deliver high-quality, source-code-grounded context for AI-assisted engineering workflows.</li>
+            <li><b>Assisted end-to-end delivery of an MCP (Model Context Protocol) server enabling engineers to query the codebase directly from their IDEs</b>, and <b>led the multi-version product support implementation</b> — driven through architecture ADRs, POCs, and FastMCP-based delivery — championing adoption across <b>4 engineering teams</b> through evaluation frameworks, user surveys, and security hardening of the MCP and ingestion pipelines.</li>
+          </ul>
+        </li>
+        <li><b>Led end-to-end delivery of a behavior tracking component</b> integrated with Gainsight (PX/CS SDK), instrumenting 50+ product components in C#/.NET to <b>enable product usage telemetry</b> for previously untracked areas — in collaboration with Product and Architecture — empowering Product Managers with data-driven insights to guide product decisions and roadmap prioritization.</li>
+        <li><b>Utilized AI development tools (Cursor, GitHub Copilot, Claude Code) with disciplined workflows</b> — leveraging <b>plan mode</b>, custom <b>agents</b>, <b>MCP servers</b>, and project-level guardrails via <b>AGENTS.md / CLAUDE.md</b>, copilot-instructions.md, and reusable <b>skills</b> — to enforce scope boundaries, maintain code quality, and ensure AI-generated output remained aligned with architectural intent.</li>
+        <li><b>Built and maintained CI/CD pipelines</b> using <b>GitHub Actions</b> and <b>TeamCity</b> across multiple projects, including greenfield setups from scratch, and leveraged <b>Docker</b> for containerized builds, testing, and deployments — improving delivery velocity, build reliability, and reproducibility across environments.</li>
+        <li><b>Owned production security, hotfix delivery, and release stabilization</b> across multiple product versions — resolving high and critical severity vulnerabilities, <b>conducting targeted code audits on legacy endpoints to proactively remediate risks</b>, delivering time-sensitive customer hotfixes, and providing rapid unblockers for pre-release CI regressions to safeguard customer environments and ensure on-time release delivery.</li>
+        <li><b>Resolved critical 51Degrees production issue during a major release</b> by proposing a low-risk architectural workaround — avoiding extensive multi-version code changes and hotfix rework while preserving release timelines and customer stability.</li>
+    </ul>
+      `,
       logo: '/sitecore_logo1.png',
     },
     {
       company: 'Sitecore',
-      position: 'Software Engineer',
+      position: 'Software Support Engineer',
       from: '30 April 2022',
       to: '30 September 2024',
       companyLink: 'https://sitecore.com',
       description: `
       <u><b>Responsibilities:</u></b>
       <br/>
-    <ul>
-        <li>- Assisted the Product Support Services Team in providing best practices guidance and troubleshooting complex customizations for Sitecore’s implementation partners and customers.</li>
-        <li>- Engaged in reverse engineering tasks to analyze and resolve technical issues within partner implementations, significantly contributing to the team’s development and efficiency.</li>
-        <li>- Collaborated with implementation partners to understand customer requirements and map them to best practice implementation approaches, ensuring optimal utilization of Sitecore’s products.</li>
-        <li>- Troubleshot and resolved complex performance and functional issues in Sitecore implementations, often addressing problems that developers were unable to solve independently.</li>
-        <li>- Documented support cases, solutions, and best practices in the company’s knowledge base to enhance the efficiency and effectiveness of the support team.</li>
-        <li>- Participated in team meetings and training sessions to stay updated on product features, support processes, and industry best practices.</li>
-    </ul>
-    <br/>
-    <u><b>Key Achievements:</u></b>
-    <br/>
-   <ul>
-        <li>- Resolved a significant number of support tickets, contributing to the overall efficiency of the team.</li>
-        <li>- Assisted in the development of a troubleshooting guide for common issues, helping reduce resolution times.</li>
-        <li>- Participated in beta testing new software releases, providing feedback that helped improve product quality.</li>
-        <li>- Supported the ramp-up process of the support team, enhancing its capacity and capability.</li>
-    </ul>
+      <ul>
+        <li><b>Delivered L2/L3 technical support</b> to 50+ enterprise customers across EMEA and APAC, troubleshooting complex performance, functional, and integration issues in production Sitecore deployments running on <b>on-premises, Azure, Docker, and Kubernetes.</b></li>
+        <li><b>Performed root cause analysis (RCA) and reverse engineering</b> on partner customizations built in <b>C#/.NET</b>, resolving escalated issues beyond front-line developer capability.</li>
+        <li><b>Owned SLA compliance and case management</b> across 24x7 support rotations, maintaining <b>0 overdue case data violations</b> and <b>&lt;1% SLA violations.</b></li>
+        <li><b>Led customer-facing troubleshooting calls</b> for P1/P2 incidents and Escalation Level 2 cases to accelerate resolution and improve customer satisfaction.</li>
+        </ul>
+      <br/>
+      <u><b>Key Achievements:</u></b>
+      <br/>
+      <ul>
+        <li><b>Recognized as a top contributor within the APAC support department</b>, closing the highest volume of cases in the quarter while consistently maintaining SLA and quality standards.</li>  <li><b>Leveraged deep production-troubleshooting experience</b> and hands-on knowledge of Sitecore internals to <b>transition into a Developer role</b> on the same product line, applying customer-facing insights to strengthen product quality from the engineering side.</li>
+      </ul>
     `,
       logo: '/sitecore_logo1.png',
     },
@@ -147,12 +153,17 @@ const CONFIG = {
       description: `
       <b><u>Responsibilities:</u></b>
       <br/>
-    <ul>
-        <li>- Learned and understood Sitecore products, including architecture and best practices for implementation.</li>
-        <li>- Collaborate with senior engineers in troubleshooting and debugging Sitecore implementations to resolve performance and functional issues.</li>
-        <li>- Gained proficiency in ASP.NET and C# through hands-on projects and tasks.</li>
-        <li>- Attend training sessions and workshops to stay updated on the latest features and updates in Sitecore products.</li>
-    </ul>`,
+      <ul>
+        <li><b>Built foundational knowledge of Sitecore XM/XP products</b>, including architecture, core modules, and implementation best practices, to support customer troubleshooting workflows.</li>
+        <li><b>Shadowed and assisted senior support engineers</b> in troubleshooting and debugging Sitecore customer implementations, contributing to the resolution of performance and functional issues.</li>
+        <li><b>Strengthened proficiency in C# and ASP.NET</b> through hands-on investigation of real customer cases and internal training exercises.</li>
+      </ul>
+      <br/>
+      <u><b>Key Achievements:</u></b>
+      <br/>
+      <ul>
+        <li><b>Completed the internship program 2 months ahead of schedule</b> and was converted into a full-time Engineer role on the product line.</li>
+      </ul>`,
       logo: '/sitecore_logo1.png',
     },
     {
@@ -164,22 +175,10 @@ const CONFIG = {
       description: `
       <b><u>Responsibilities:</u></b>
       <br/>
-    <ul>
-        <li>- Participated in the software development projects for IT Services, focusing on managing and developing websites and systems for the university.</li>
-        <li>- Developed and maintained three websites operated under the subdomain of Monash University Malaysia to provide services for all Clubs and Societies as well as Student Associations.</li>
-        <li>- Utilized WordPress CMS, PHP, JavaScript, HTML, and CSS to build and enhance the functionality of the university’s websites.</li>
-        <li>- Established a student intranet to streamline and automate administrative requests using the SharePoint platform.</li>
-        <li>- Collaborated with various university departments to understand their requirements and implement effective technical solutions.</li>
-        <li>- Conducted regular testing and maintenance of the websites to ensure optimal performance and security.</li>
-    </ul>
-<br/>
-    <b><u>Key Achievements:</u></b>
-    <br/>
-    <ul>
-        <li>- Successfully developed and launched three fully functional websites, improving the accessibility and service delivery for student clubs, societies, and associations.</li>
-        <li>- Enhanced the efficiency of administrative processes by automating request handling through the newly established student intranet on SharePoint.</li>
-        <li>- Contributed to the improvement of the university’s digital presence by integrating modern web technologies and best practices.</li>
-    </ul>`,
+      <ul>
+        <li><b>Developed and maintained 3 websites and a SharePoint-based student intranet</b> for university Clubs, Societies, and Student Associations, streamlining and automating administrative request workflows.</li>
+        <li><b>Collaborated with cross-functional university departments</b> to gather requirements, deliver technical solutions, and conduct testing to ensure website performance and security.</li>
+      </ul>`,
       logo: '/monash_university_logo1.png',
     },
   ],
@@ -234,16 +233,16 @@ const CONFIG = {
       <b><u>Activities & Awards</u></b>
       <p><i>Club Achievements</i></p>
         <ul>
-          <li>- Participated in Melbourne University Inter-University Kendo Competition secured 2nd Place in Team category, achieved 2nd Place in Individual Kyu category and awarded Best Fighting Spirit</li>
-          <li>- Participated in Ballarat Taikai Kendo Competition</li>
+          <li>Participated in Melbourne University Inter-University Kendo Competition secured 2nd Place in Team category, achieved 2nd Place in Individual Kyu category and awarded Best Fighting Spirit</li>
+          <li>Participated in Ballarat Taikai Kendo Competition</li>
           </ul>
         <br/>
       <p><i>Treasurer, Monash University Kendo Club (2019 - 2021)</i></p>
       <ul>
-        <li>- Elected committee member for two consecutive terms, responsible for planning, assisting, and organizing events and activities for club members.</li>
-        <li>- Prepared and formulated financial budgets, ensuring accurate allocation of resources.</li>
-        <li>- Developed and enforced policies to ensure all treasury activities complied with established guidelines.</li>
-        <li>- Oversaw budgeting and cost management to maintain financial stability and accountability.</li>
+        <li>Elected committee member for two consecutive terms, responsible for planning, assisting, and organizing events and activities for club members.</li>
+        <li>Prepared and formulated financial budgets, ensuring accurate allocation of resources.</li>
+        <li>Developed and enforced policies to ensure all treasury activities complied with established guidelines.</li>
+        <li>Oversaw budgeting and cost management to maintain financial stability and accountability.</li>
       </ul>
 `,
     },
@@ -264,30 +263,30 @@ const CONFIG = {
         <b><u>Activities & Awards</u></b>
         <p><i>Awards</i></p>
         <ul>
-          <li>- Received Monash High Achiever Award (HAA) (2016 - 2020) 6 times every consecutive semester with excellent academic result.</li>
-          <li>- First Class Honours, Minor in Computer Networks and Security</li>
-          <li> - Team was awarded the 1st Runner up at 3D Conquest Coding Track Hackathon - Country Final. </li>
+          <li>Received Monash High Achiever Award (HAA) (2016 - 2020) 6 times every consecutive semester with excellent academic result.</li>
+          <li>First Class Honours, Minor in Computer Networks and Security</li>
+          <li>Team was awarded the 1st Runner up at 3D Conquest Coding Track Hackathon - Country Final. </li>
         </ul>
         <br/>
         <p><i>Club Achievements</i></p>
         <ul>
-          <li>- Represented Monash University in the Kendo category at Unigames Australia and won Team match 5th Places.</li>
-          <li>- Achieved the rank of 5th Kyu in Kendo.</li>
-          <li>- Awarded Fighting Spirit at the Melbourne University Kendo Club (MUKEN) annual competition.</li>
-          <li>- Actively participated in Kendo competitions across Victoria, Melbourne.</li>
+          <li>Represented Monash University in the Kendo category at Unigames Australia and won Team match 5th Places.</li>
+          <li>Achieved the rank of 5th Kyu in Kendo.</li>
+          <li>Awarded Fighting Spirit at the Melbourne University Kendo Club (MUKEN) annual competition.</li>
+          <li>Actively participated in Kendo competitions across Victoria, Melbourne.</li>
         </ul>
         <br/>
         <p><i>Monash Android Development Workshop</i></p>
         <ul>
-          <li>- Organized and conducted an Android development workshop aimed at teaching coding skills to non-IT students.</li>
+          <li>Organized and conducted an Android development workshop aimed at teaching coding skills to non-IT students.</li>
         </ul>
          <br/>
         <p><i>Research</i></p>
         <ul>
-          <li>- Knowledge Graph for Android Mobile:  Smart Search, Mining and Recommendation</li>
-          <li>- The research project is to create a Knowledge Graph for Android Mobile applications to help users and researchers to search for their desire apps without pre-downloading all the apps. It also provides some useful information of the application, included API used, permission gained, size, reviews & ratings from Google Play Store, as well as some recommendations of similar apps.</li>
-          <li>- Tool: React.js, Java, Python, Neo4J</li>
-          <li> - <u><a href="https://drive.google.com/file/d/1Fg2yAl5ivwD8GkQIMs0WYa-cCK4OS5Gb/view" target="_blank">View Research</a></u></li>
+          <li>Knowledge Graph for Android Mobile:  Smart Search, Mining and Recommendation</li>
+          <li>The research project is to create a Knowledge Graph for Android Mobile applications to help users and researchers to search for their desire apps without pre-downloading all the apps. It also provides some useful information of the application, included API used, permission gained, size, reviews & ratings from Google Play Store, as well as some recommendations of similar apps.</li>
+          <li>Tool: React.js, Java, Python, Neo4J</li>
+          <li><u><a href="https://drive.google.com/file/d/1Fg2yAl5ivwD8GkQIMs0WYa-cCK4OS5Gb/view" target="_blank">View Research</a></u></li>
         </ul>
 
       `,
