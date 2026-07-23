@@ -49,7 +49,7 @@ const ListItem = ({
     </div>
     {description && (
       <div
-        className="mb-4 font-normal"
+        className="mb-4 font-normal [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-2 [&_li]:mb-1"
         dangerouslySetInnerHTML={{ __html: description }}
       ></div>
     )}

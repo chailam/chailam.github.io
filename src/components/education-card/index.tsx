@@ -92,7 +92,7 @@ const EducationCard = ({
                     <div className="mb-4 font-normal">{item.institution} </div>
                     {item.body && (
                       <div
-                        className="mb-4 font-normal"
+                        className="mb-4 font-normal [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-2 [&_li]:mb-1"
                         dangerouslySetInnerHTML={{ __html: item.body }}
                       ></div>
                     )}
